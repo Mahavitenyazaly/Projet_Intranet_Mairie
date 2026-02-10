@@ -183,29 +183,6 @@ body {
     font-size: 14px;
 }
 
-/* CALENDRIER */
-.calendar {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-.calendar th,
-.calendar td {
-    border: 1px solid #ccc;
-    padding: 8px;
-}
-
-.calendar th {
-    background-color: #0a4c8b;
-    color: white;
-}
-
-.calendar .today {
-    background-color: #a0ace5;
-    font-weight: bold;
-}
-
 /* BOUTON */
 .btn {
     margin-top: 10px;
