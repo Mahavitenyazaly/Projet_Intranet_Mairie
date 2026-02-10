@@ -137,6 +137,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     font-size: 15px;
+    margin-bottom: 25px;
 }
 
 .card h2 {
@@ -147,12 +148,18 @@ body {
 .card ul {
     margin-left: 20px;
     list-style: disc;
+    margin-top: 10px;
 }
 
 .card ul li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: #444;
 }
+.card .btn {
+    margin-top: 15px;
+    display: inline-block;
+}
+
 
 /* ACCÈS RAPIDES */
 .quick-links {
@@ -437,6 +444,152 @@ body {
     color: #555;
     margin-bottom: 10px;
 }
+/* RH PAGE */
+
+.rh-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.rh-btn {
+    flex: 1;
+    background: #0a4c8b;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.rh-btn:hover {
+    background: #083b6d;
+    transform: translateY(-3px);
+}
+
+/* version plus petite pour section demandes */
+.rh-btn.small {
+    padding: 14px;
+    font-size: 14px;
+}
+
+/* bloc demandes */
+.rh-demandes {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .rh-actions,
+    .rh-demandes {
+        flex-direction: column;
+    }
+}
+/* PLANNING */
+
+.planning-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.planning-calendar {
+    text-align: center;
+}
+
+.planning-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .planning-layout {
+        grid-template-columns: 1fr;
+    }
+}
+/* ================= CALENDRIER ================= */
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.calendar th {
+    background-color: #0a4c8b;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar td {
+    background-color: #f9fafb;
+}
+
+.calendar td:hover {
+    background-color: #e6f0ff;
+    cursor: pointer;
+}
+
+/* Jour actuel */
+.calendar .today {
+    background-color: #0a4c8b;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+/* ================= BARRE DE RECHERCHE ================= */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #0a4c8b;
+}
+
+.search-box button {
+    padding: 10px 18px;
+    background-color: #0a4c8b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #083b6d;
+}
+
+
 
 
 
