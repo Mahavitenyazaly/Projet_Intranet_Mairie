@@ -194,7 +194,16 @@ body {
 .btn {
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #0a4c8b;
+    background-color: #dde8f1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-outline {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1d5f95;
     color: white;
     border: none;
     border-radius: 6px;
@@ -202,7 +211,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #083b6d;
+    background-color: #c8d2dd;
 }
 @media (max-width: 768px) {
     .nav {
@@ -454,12 +463,13 @@ body {
 .events-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
 .events-header h2 {
     color: #0a4c8b;
+    margin-bottom: 10px;
 }
 
 .events-header a {
@@ -472,6 +482,13 @@ body {
 
 .events-grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    gap: 20px;
+}
+.events-gride {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
 }
@@ -482,7 +499,7 @@ body {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(91, 91, 91, 0.08);
     transition: transform 0.2s;
 }
 
@@ -537,3 +554,86 @@ body {
     font-size: 14px;
     color: #555;
 }
+/* ====== AJOUT EVENEMENT ====== */
+
+.events-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.add-event-btn {
+    background: #0a4c8b;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.add-event-btn:hover {
+    background: #083b6d;
+}
+
+/* Formulaire */
+
+.event-form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.event-form h3 {
+    color: #0a4c8b;
+    margin-bottom: 12px;
+}
+
+.event-form input,
+.event-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.event-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+/* FORMULAIRE */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #0a4c8b;
+}
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
