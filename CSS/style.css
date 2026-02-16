@@ -175,6 +175,7 @@ body {
     text-align: center;
     border-radius: 6px;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .quick-item:hover {
@@ -217,27 +218,6 @@ body {
     .nav {
         flex-direction: column;
     }
-}
-/* SERVICES MUNICIPAUX */
-.services-list {
-    list-style: none !important;
-    margin-top: 10px;
-}
-
-.services-list li {
-    padding: 10px 0 10px 20px;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    color: #333;
-}
-
-/* Flèche */
-.services-list li::before {
-    content: "➤";
-    position: absolute;
-    left: 0;
-    color: #0a4c8b;
-    font-size: 14px;
 }
 
 /* INTRODUCTION */
