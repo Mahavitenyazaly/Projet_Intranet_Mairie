@@ -163,23 +163,37 @@ body {
 
 /* ACCÈS RAPIDES */
 .quick-links {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
 }
 
 .quick-item {
-    flex: 1;
-    background-color: #0a4c8b;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 15px;
+    background: white;
+    border-left: 6px solid #0a4c8b;
+    color:#0a4c8b;
+    padding: 18px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.quick-item img.icon {
+    width: 28px;
+    height: 28px;
+}
+.quick-item a {
+    text-decoration: none;
+    color: #0a4c8b;
+    font-weight: bold;
 }
 
 .quick-item:hover {
-    background-color: #083b6d;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 /* FOOTER */
