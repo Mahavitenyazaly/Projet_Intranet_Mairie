@@ -1,3 +1,26 @@
+<?php
+require_once("../BDD/connexionBDD.php");
+
+if(isset($_GET['Titre']))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -28,25 +51,25 @@
 
     <div class="card">
 
-        <form>
+        <form action="ajout_events.php" method="GET">
 
             <label>Titre de l'évènement</label>
-            <input type="text" placeholder="Ex : Forum de l'emploi">
+            <input type="text" placeholder="Ex : Forum de l'emploi" name="Titre">
 
             <label>Date</label>
-            <input type="date">
+            <input type="date" name="Date">
 
             <label>Heure</label>
-            <input type="time">
+            <input type="time" name="Heure">
 
             <label>Lieu</label>
-            <input type="text" placeholder="Ex : Place de la République">
+            <input type="text" placeholder="Ex : Place de la République" name="Lieu">
 
             <label>Description</label>
-            <textarea rows="4" placeholder="Description de l'évènement..."></textarea>
+            <textarea rows="4" placeholder="Description de l'évènement..." name="Description"></textarea>
 
             <label>Image de l'évènement</label>
-            <input type="file">
+            <input type="file" name="Image">
 
             <button type="submit" class="btn-outline">
                 Enregistrer l'évènement
